@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.contact-section {
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.contact-form {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.row {
+  margin: 2px 0;
+}
+.contact-form-text {
+  /* width: 400px; */
+  background-color: black;
+  border: 2px solid bisque;
+
+  padding: 10px 20px;
+  margin: 4px;
+  outline: none;
+  color: white;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+@media only screen and (min-width: 600px) {
+  .contact-form-text {
+    width: 400px;
+  }
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 8px 2px bisque;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  border: 2px solid bisque;
+  border-radius: 20px;
+  color: bisque;
+  background-color: black;
+  padding: 12px 50px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+.contact-form-btn:hover {
+  background-color: bisque;
+  color: black;
+}
+
+/* BC-img */
+.BC-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BC-img {
+  width: 600px;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .BC-img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+/* home-btn */
+.home-btn {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.homeIMG{
+  background-color: bisque;
+  width: 40px;
+ 
+  padding: 2px;
+  transition: 0.5s; 
+}
+.homeIMG:hover{
+  box-shadow: 0 0 8px 2px bisque;
+}
+
+@media(min-width: 500px){
+  .homeIMG{
+    position: fixed;
+    left: 4px;
+    top: 4px;
+  }
+ 
+}
