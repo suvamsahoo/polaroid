@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+header #quote{
+    font-size: 20px;
+    color: bisque;
+    padding: 100px 10px 40px 10px;
+}
+.homeIMG{
+    background-color: bisque;
+    z-index: 100;
+    width: 40px;
+    position: fixed;
+    left: 4px;
+    top: 4px;
+    padding: 2px;
+    transition: 0.5s; 
+  }
+  .homeIMG:hover{
+    box-shadow: 0 0 8px 2px bisque;
+  }
+
+/* main */
+.state-container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+ 
+}
+.state-box{
+    width: 400px;
+    height: 200px;
+    border: 2px solid bisque;
+    margin: 5px;
+
+    overflow: hidden;
+    position: relative;
+}
+.state-box:hover{
+    box-shadow: 0 0 8px 2px bisque;
+}
+a{
+    text-decoration: none;
+}
+.state-img{
+    width: 400px;
+    height: 200px;
+    filter: brightness(80%); 
+    transition: transform .5s;
+}
+.state-img:hover{
+    transform: scale(1.1);
+}
+
+#state-title{
+    z-index: 100;
+    color: white;
+    font-size: 30px;
+
+    /* Text at center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+
+@media screen and (max-width: 430px) {
+    .state-box{
+        width: 300px;
+        height: 150px;
+    }
+    .state-img{
+        width: 300px;
+        height: 150px;
+    }
+    #state-title{
+        font-size: 20px;
+    }
+    
+  }

@@ -5,6 +5,7 @@ port = 4000;
 app.use(express.static("Home"));
 app.use(express.static("Contact"));
 app.use(express.static("Galleries"));
+app.use(express.static("Travel"));
  
 
 app.get("/", function (req, res) {
@@ -15,6 +16,9 @@ app.get("/contact", function (req, res) {
 });
 app.get("/galleries", function (req, res) {
   res.sendFile(__dirname + "/galleries.html");
+});
+app.get("/travel", function (req, res) {
+  res.sendFile(__dirname + "/travel.html");
 });
  
 
