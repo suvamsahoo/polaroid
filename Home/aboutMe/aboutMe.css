@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Ballerinas;
+  src: url("./BallerinasDemoRegular.ttf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#aboutMe {
+  /* min-height: 100vh; */
+  background-color: black;
+}
+#aboutMe h1 {
+  color: bisque;
+  font-family: Ballerinas;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+.Founder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Founder img {
+  width: 270px;
+  margin-bottom: 15px;
+}
+.Founder p {
+  color: white;
+  margin: 0 20px 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#aboutMe h3 {
+  color: bisque;
+  display: flex;
+  flex-direction: row;
+}
+#aboutMe h3:before,
+#aboutMe h3:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid bisque;
+  margin: auto;
+}
+#aboutMe h3:before {
+  margin-right: 20px;
+}
+#aboutMe h3:after {
+  margin-left: 20px;
+}
+#aboutMe h4{
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+#span-polaroid{
+  color: bisque;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialMedia img {
+  background-color: aliceblue;
+  width: 30px;
+  border-radius: 50%;
+  padding: 1px;
+  margin: 10px;
+}
+.socialMedia img:hover {
+  background-color: bisque;
+}

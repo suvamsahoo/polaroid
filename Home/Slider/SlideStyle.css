@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  padding: 30px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+.img1 {
+  background-image: url("../Slider/sliderImgs/s1.jpg");
+}
+.img2 {
+  background-image: url("../Slider/sliderImgs/s2.jpg");
+}
+.img3 {
+  background-image: url("../Slider/sliderImgs/s3.jpg");
+}
+.img4 {
+  background-image: url("../Slider/sliderImgs/s4.jpg");
+}
+.img5 {
+  background-image: url("../Slider/sliderImgs/s5.jpg");
+}
+.img6 {
+  background-image: url("../Slider/sliderImgs/s6.jpg");
+}
+.img7 {
+  background-image: url("../Slider/sliderImgs/s7.jpg");
+}
+.img8 {
+  background-image: url("../Slider/sliderImgs/s8.jpg");
+}
+.img9 {
+  background-image: url("../Slider/sliderImgs/s9.jpg");
+}

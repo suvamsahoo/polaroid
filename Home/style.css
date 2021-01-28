@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*---- Front ----*/
+.main {
+  height: 100vh;
+  background-image: url("./img/BI.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.maintitle {
+  text-align: center;
+}
+.maintitle p {
+  font-family: "Great Vibes", cursive;
+  color: white;
+  font-size: 50px;
+}
+.maintitle h1 {
+  color: bisque;
+}
+.maintitle h1:hover {
+  color: white;
+  display: inline-block;
+}
+
+/* animation */
+.maintitle h1 {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.maintitle a {
+  text-decoration: none;
+}
+#title-span1 {
+  color: bisque;
+}
+#title-span2 {
+  color: bisque;
+}
+
+/*---- Image Store ----*/
+#Image-Store {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ImageContainer {
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+}
+.ImageContainer img {
+  width: 220px;
+  height: 220px;
+}
+
+@media only screen and (max-width: 750px){
+  .ImageContainer img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
